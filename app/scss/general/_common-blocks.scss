@@ -1,0 +1,212 @@
+/* Хлебные крошки */
+
+.breadcrumbs {
+	margin-bottom: 50px;
+	overflow: hidden;
+
+	@media (max-width: 1000px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 375px) {
+		margin-bottom: 36px;
+		width: 130%;
+	}
+
+	&__nav {
+		display: flex;
+		gap: 10px;
+
+		@media (max-width: 375px) {
+			gap: 5px;
+		}
+	}
+		
+	&__link {
+		position: relative;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 120%;
+
+		@media (max-width: 1000px) {
+			font-size: 11px;
+		}
+		@media (max-width: 600px) {
+			font-size: 10px;
+		}
+		@media (max-width: 375px) {
+			font-size: 12px;
+		}
+	}
+		
+	.current, .current:hover {
+		font-weight: 500;
+		color: #AFAFB0;
+		background: none;
+	}
+}
+
+.popup {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	visibility: hidden;
+	opacity: 0;
+
+	overflow-y: scroll;
+	z-index: 99;
+
+	&__content {
+		max-width: 405px;
+		transform: translate(100%, 0px);
+		opacity: 0;
+		
+	}
+
+	&__title-box {
+		padding: 30px 20px 20px;
+		display: flex;
+		align-items: center;
+		gap: 12.5px;
+		border-bottom: 1px solid #E5E5E5;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 120%;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #CDD2DD;
+	}
+
+	&__close {
+		position: absolute;
+		top: 19px;
+		right: 19px;
+	}
+
+	&__service-list {
+		margin-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__service-item {
+		padding: 15px 21px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #E5E5E5;
+
+		&_popup2 {
+			padding: 10px 20px;
+			display: block;
+		}
+	}
+
+	&__service-link-box {
+		display: flex;
+		align-items: baseline;
+		gap: 11.3px;
+	}
+
+	&__service-link {
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 150%;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #46A44E;
+		}
+	}
+
+	&__service-arrow {
+		transform: rotate(180deg);
+	}
+}
+
+.popup-open {
+	visibility: hidden;
+	opacity: 0;
+
+	@media (max-width: 375px) {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.popup {
+
+		&__content {
+			transform:translate(0%, 0px);
+			opacity: 1;
+		}
+	}
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.popup2 {
+
+	&__service-link-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__service-link {
+		font-size: 14px;
+		line-height: 160%;
+	}
+
+	&__top-decor {
+		padding: 4px 8px;
+		font-weight: 800;
+		font-size: 9px;
+		line-height: 110%;
+		text-transform: uppercase;
+		color: white;
+		background: #46A44E;
+	}
+
+	&__new-decor {
+		padding: 4px 8px;
+		font-weight: 800;
+		font-size: 9px;
+		line-height: 110%;
+		text-transform: uppercase;
+		color: white;
+		background: #101628;
+	}
+
+	&__arrow-sub {
+
+		&_active {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.subsubmenu-popup2 {
+	margin-top: 10px;
+	padding-top: 15px;
+	display: none;
+	gap: 15px;
+
+	&_active {
+		display: flex;
+	}
+}
+
+.subsubmenu-popup-link {
+
+	&_active {
+		color: #46A44E;
+	}
+}

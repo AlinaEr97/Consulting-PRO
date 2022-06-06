@@ -1,3 +1,23 @@
 //Обнуление
 @import "general/null";
 
+//Шрифты
+@import "general/fonts";
+
+//Общие стили body
+@import "general/body";
+
+//Стили хедера
+@import "general/header";
+
+//Меню
+@import "general/menu";
+
+//Общие блоки
+@import "general/common-blocks";
+
+//Стили секции аудита
+@import "main-page/hero";
+
+//Стили бокового меню
+@import "main-page/side-bar";

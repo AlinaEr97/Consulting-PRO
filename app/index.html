@@ -1,13 +1,907 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<title>Consulting PRO</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="prefetch" href="fonts/Manrope/Manrope-Medium.ttf" as="font" crossorigin>
+	<link rel="prefetch" href="fonts/Manrope/Manrope-Medium.woff" as="font" crossorigin>
+	<link rel="prefetch" href="fonts/Manrope/Manrope-Medium.woff2" as="font" crossorigin>
+	<link rel="prefetch" href="fonts/Oswald/Oswald-Regular.ttf" as="font" crossorigin>
+	<link rel="prefetch" href="fonts/Oswald/Oswald-Regular.woff" as="font" crossorigin>
+	<link rel="prefetch" href="fonts/Oswald/Oswald-Regular.woff2" as="font" crossorigin>
+
 </head>
+
 <body>
-	
-	<script src="js/main.min.js"></script>
+
+	<div class="wrapper">
+
+		<header class="header">
+
+			<div class="header-top">
+
+				<div class="header-top__contacts">
+					<p class="header-top__text">г. Одинцово, ул. Молодёжная 46с1</p>
+					<p class="header-top__text">info-consaltingpro@mail.ru</p>
+				</div>
+				<!-- /.header-top__contacts -->
+
+				<div class="header-top__time">
+					<p class="header-top__text">По будням, с 10:00 до 20:00</p>
+				</div>
+				<!-- /.header-top__time -->
+
+			</div>
+			<!-- /.header-top -->
+
+			<div class="header-menu">
+
+				<div class="header-menu__left-box">
+
+					<div class="header-menu__logo">
+						<img src="img/header/logo.png" alt="Consulting PRO" class="header-menu__logo-image">
+					</div>
+					<!-- /.header-menu__logo -->
+
+					<nav class="menu header-menu__menu">
+
+						<ul class="menu__links">
+
+							<li class="menu__item">
+								<a href="" class="menu__link">О компании</a>
+							</li>
+							<li class="menu__item menu__item_active">
+								<a href="#popup" class="menu__link  menu__link_active popup-link">Услуги</a>
+								<img src="img/svg/green-arrow.svg" alt="Развернуть" class="menu__arrow">
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Кейсы</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Стоимость</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Калькулятор</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+
+						</ul>
+						<!-- /.menu__links-->
+
+						<div class="contacts">
+
+							<p class="contacts__time">По будням, с 10:00 до 20:00</p>
+							<div class="contacts__number">8 499-391-00-09</div>
+
+							<div class="contacts__green-group">
+
+								<p class="contacts__green-item">Обратный звонок</p>
+								<p class="contacts__address">г. Одинцово, ул. Молодёжная 46с1</p>
+								<p class="contacts__green-item">info-consaltingpro@mail.ru</p>
+
+							</div>
+							<!-- /.contacts__green-group-->
+
+							<div class="contacts__social">
+
+								<img src="img/svg/vk.svg" alt="Мы Вконтакте" class="contacts__icon">
+								<img src="img/svg/youtube.svg" alt="Мы на Youtube" class="contacts__icon">
+
+								<div class="contacts__social-box">
+									<img src="img/svg/whatsapp-bw.svg" alt="Мы в WhatsApp" class="contacts__icon">
+									<p class="contacts__social-name">WhatsApp</p>
+								</div>
+
+								<div class="contacts__social-box">
+									<img src="img/svg/telegram-bw.svg" alt="Мы в Telegram" class="contacts__icon">
+									<p class="contacts__social-name">Telegram</p>
+								</div>
+
+							</div>
+							<!-- /.contacts__social-->
+
+						</div>
+						<!-- /.contacts-->
+
+					</nav>
+					<!-- /.menu -->
+
+					<nav class="services-menu">
+
+						<ul class="services-list">
+
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Бухгалтерские услуги</a>
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Консалтинговые услуги</a>
+							</li>
+							<li class="services-list__item submenu-active">
+
+								<a href="" class="services-list__link submenu-active-link">Юридическое сопровождение</a>
+
+								<div class="submenu submenu_scroll">
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Услуги налогового планирования</a>
+											<span class="submenu__top-decor">top</span>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Сопровождение по налоговым спорам</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Регистрация некоммерческого партнерства</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Сопровождение процедуры</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование <span
+													class="submenu__new-decor">new</span></a>
+
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Регистрация автономных некоммерческих организаций</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги в области антимонопольного законодательства</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+								</div>
+								<!-- /.submenu-->
+
+							</li>
+							<li class="services-list__item submenu-active">
+
+								<a href="" class="services-list__link submenu-active-link">Налоговый консалтинг</a>
+
+								<div class="submenu">
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа <span
+													class="submenu__top-decor">top</span></a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Оптимизация видов налогов</a>
+											<img src="img/svg/green-arrow.svg" alt="list" class="submenu__arrow-decor_none">
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+									<ul class="submenu__list">
+
+										<li class="subsubmenu-active submenu__item">
+
+											<a href="" class="subsubmenu-active-link submenu__link">Консультация по налогам
+												<img src="img/svg/green-arrow.svg" alt="list" class="subsubmenu__arrow-decor">
+												<span class="submenu__top-decor">top</span>
+											</a>
+
+											<ul class="subsubmenu">
+
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультации по НДС</a>
+												</li>
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультации УСН</a>
+												</li>
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультации по налогу на имущество</a>
+												</li>
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультации по налогу на прибыль</a>
+												</li>
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультация по НДФЛ</a>
+												</li>
+												<li class="subsubmenu__item">
+													<a href="" class="subsubmenu__link">Консультация по страховым взносам</a>
+												</li>
+
+											</ul>
+											<!-- /.subsubmenu-->
+
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Пакет должной осмотрительности</a>
+											<span class="submenu__new-decor">new</span>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Оптимизация для юрлиц</a>
+											<img src="img/svg/green-arrow.svg" alt="list" class="submenu__arrow-decor_none">
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+								</div>
+								<!-- /.submenu-->
+
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Рассчетный счет без визита в банк</a>
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Предоставление услуг по аренде юридического адреса</a>
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Банкротство</a>
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link services-list__link_current">Аудиторские услуги</a>
+							</li>
+							<li class="services-list__item submenu-active">
+								<a href="" class="services-list__link submenu-active-link">Регистрация компании и
+									организаций</a>
+
+								<div class="submenu submenu_scroll">
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<h5 class="submenu__link_title">Регистрация фирм</h5>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Сопровождение по налоговым спорам <span
+													class="submenu__top-decor">top</span></a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Ответ на требование налогового органа</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет безопасности сделок</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги налогового планирования</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Регистрация некоммерческого партнерства</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Сопровождение процедуры </a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<h5 class="submenu__link_title">Регистрация изменений</h5>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Возражения на акт налоговой</a>
+											<span class="submenu__top-decor">top</span>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Регистрация автономных некоммерческих организаций</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+									<ul class="submenu__list">
+
+										<li class="submenu__item">
+											<h5 class="submenu__link_title">Регистрация некоммерческих организаций</h5>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Услуги оптимизации налогов</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Возражения на акт налоговой</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Пакет должной осмотрительности</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Международное налоговое планирование</a>
+										</li>
+										<li class="submenu__item submenu__item_decor">
+											<a href="" class="submenu__link submenu__link_decor">Услуги оптимизации налогов</a>
+											<span class="submenu__top-decor">top</span>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Регистрация автономных некоммерческих организаций</a>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__link">Жалоба в налоговую</a>
+										</li>
+
+									</ul>
+									<!-- /.submenu__list-->
+
+								</div>
+								<!-- /.submenu-->
+
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Ликвидация юридических лиц</a>
+							</li>
+							<li class="services-list__item">
+								<a href="" class="services-list__link">Другие услуги</a>
+							</li>
+
+						</ul>
+						<!-- /.services-list -->
+
+					</nav>
+					<!-- /.services-menu -->
+
+				</div>
+				<!-- /.header-menu__left-box -->
+
+				<div class="header-menu__right-box">
+
+					<div class="header-menu__messengers">
+						<img src="img/svg/telegram-bw.svg" alt="Мы в Telegram" class="header-menu__icon header-menu__icon_bw">
+						<img src="img/svg/whatsapp-bw.svg" alt="Мы в WhatsApp" class="header-menu__icon header-menu__icon_bw">
+						<img src="img/svg/telegram-col.svg" alt="Мы в Telegram"
+							class="header-menu__icon header-menu__icon_col">
+						<img src="img/svg/whatsapp-col.svg" alt="Мы в WhatsApp"
+							class="header-menu__icon header-menu__icon_col">
+					</div>
+					<!-- /.header-menu__messengers -->
+
+					<div class="header-menu__phone">
+						<p class="header-menu__number">8 499-391-00-09</p>
+						<p class="header-menu__back-call">Обратный звонок</p>
+					</div>
+					<!-- /.header-menu__phone -->
+
+					<a class="menu-burger">
+						<span class="menu-burger__line"></span>
+						<span class="menu-burger__line"></span>
+						<span class="menu-burger__line"></span>
+					</a>
+					<!-- /.menu-burger-->
+
+				</div>
+				<!-- /.header-menu__right-box -->
+
+			</div>
+			<!-- /.header-menu -->
+
+		</header>
+		<!-- /.header -->
+
+		<main class="audit">
+
+			<nav class="side-bar">
+
+				<ul class="side-bar__list">
+
+					<li class="side-bar__item">
+						<img src="img/svg/video.svg" alt="Видео" class="side-bar__icon">
+						<a href="" class="side-bar__link">Видео об услуге</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/offer.svg" alt="Предложение" class="side-bar__icon">
+						<a href="" class="side-bar__link">Коммерческое предложение</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/price.svg" alt="Цена" class="side-bar__icon">
+						<a href="" class="side-bar__link">Стоимость</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/question.svg" alt="Вопрос" class="side-bar__icon">
+						<a href="" class="side-bar__link">Вопросы и ответы</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/case.svg" alt="Кейс" class="side-bar__icon">
+						<a href="" class="side-bar__link">Кейсы</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/work.svg" alt="Работа" class="side-bar__icon">
+						<a href="" class="side-bar__link">Этапы работ</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/calculator.svg" alt="Калькулятор" class="side-bar__icon">
+						<a href="" class="side-bar__link">Калькулятор стоимости</a>
+					</li>
+					<li class="side-bar__item">
+						<img src="img/svg/services.svg" alt="Услуги" class="side-bar__icon">
+						<a href="" class="side-bar__link">Другие услуги</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- /.side-bar -->
+
+			<div class="full-screen">
+
+				<section class="hero">
+
+					<div class="hero-text">
+
+						<nav class="breadcrumbs">
+							<ul class="breadcrumbs__nav">
+								<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="">Главная</a></li>
+								<span>&mdash;</span>
+								<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="">Услуги</a></li>
+								<span>&mdash;</span>
+								<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="">Бухгалтерские услуги</a>
+								</li>
+								<span>&mdash;</span>
+								<li class="breadcrumbs__crumb"><a class="breadcrumbs__link current" href="">Аудит
+										бухгалтерии</a></li>
+							</ul>
+						</nav>
+						<!-- /.breadcrumbs -->
+
+						<h1 class="hero-text__title">Аудит бухгалтерии</h1>
+
+						<div class="turnover">
+
+							<p class="turnover__text">Годовой оборот вашей компании, млн. руб.</p>
+
+							<div class="turnover-sum">
+
+								<div class="turnover-sum__box">
+									<input type="radio" name="turnover" id="five" class="turnover-sum__radio-btn" checked>
+									<label class="turnover-sum__radio" for="five">&lt;5 млн. руб.</label>
+								</div>
+
+								<div class="turnover-sum__box">
+									<input type="radio" name="turnover" id="five-seven" class="turnover-sum__radio-btn">
+									<label class="turnover-sum__radio" for="five-seven">5-7 млн. руб.</label>
+								</div>
+
+								<div class="turnover-sum__box">
+									<input type="radio" name="turnover" id="seven-ten" class="turnover-sum__radio-btn">
+									<label class="turnover-sum__radio" for="seven-ten">7-10 млн. руб.</label>
+								</div>
+
+								<div class="turnover-sum__box">
+									<input type="radio" name="turnover" id="ten" class="turnover-sum__radio-btn">
+									<label class="turnover-sum__radio" for="ten">&gt; 10 млн. руб.</label>
+								</div>
+
+							</div>
+							<!-- /.turnover-sum -->
+
+							<span class="turnover__result">от 59 900 руб.*</span>
+
+							<div class="turnover-button">
+								<a href="" class="turnover-button__link">Зафиксировать стоимость</a>
+								<img src="img/svg/arrow.svg" alt="стрелочка" class="tirnover-button__arrow">
+							</div>
+							<!-- /.turnover-button -->
+
+							<p class="turnover__remark">*Не устроила цена? Обсудим индивидуальное предложение и найдем наиболее
+								выгодные варианты сотрудничества</p>
+
+						</div>
+						<!-- /.turnover -->
+
+					</div>
+					<!-- /.hero-text -->
+
+					<div class="hero-bg">
+						<img src="img/hero/hero-bg.png" alt="Аудит" class="hero-bg__image">
+					</div>
+					<!-- /.hero-bg -->
+
+				</section>
+				<!-- /.hero -->
+
+				<section class="advantages">
+
+					<div class="advantages__item">
+						<span class="advantages__big">A++</span>
+						<p class="advantages__text">эксперты с опытом от 6 лет</p>
+					</div>
+
+					<div class="advantages__item">
+						<span class="advantages__big">&gt;60</span>
+						<p class="advantages__text">клиентов на постоянной основе</p>
+					</div>
+
+					<div class="advantages__item">
+						<span class="advantages__big">4.7</span>
+						<p class="advantages__text">средняя оценка от наших клиентов за 2021 год</p>
+					</div>
+
+				</section>
+				<!-- /.advantages -->
+
+			</div>
+			<!-- /.full-screen -->
+
+		</main>
+		<!-- /.audit -->
+
+		<article class="popup" id="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+
+					<div class="popup__title-box">
+						<img src="img/svg/gray-arrow.svg" alt="Свернуть" class="popup__icon close-popup">
+						<h5 class="popup__title">Услуги</h5>
+						<img src="img/svg/close.svg" alt="Закрыть" class="popup__close close-popup">
+					</div>
+					<!-- /.popup__title-box -->
+
+					<ul class="popup__service-list">
+
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Бухгалтерские услуги</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Консалтинговые услуги</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Юридическое сопровождение</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Налоговый консалтинг</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="#popup2" class="popup__service-link popup-link">Рассчетный счет без визита в банк</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Предоставление услуг по аренде юридического адреса</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Банкротство</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Аудиторские услуги</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Регистрация компании и организаций</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Ликвидация юридических лиц</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+						<li class="popup__service-item">
+							<div class="popup__service-link-box">
+								<img src="img/svg/choose.svg" alt="Выбрать" class="popup__service-icon">
+								<a href="" class="popup__service-link">Другие услуги</a>
+							</div>
+							<img src="img/svg/gray-arrow.svg" alt="Развернуть" class="popup__service-arrow">
+						</li>
+
+					</ul>
+					<!-- /.popup__service-list -->
+
+				</div>
+			</div>
+		</article>
+		<!-- /.popup -->
+
+		<article class="popup popup2" id="popup2">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+
+					<div class="popup__title-box">
+						<a href="#popup" class="popup__return popup-link">
+							<img src="img/svg/gray-arrow.svg" alt="Свернуть" class="popup__icon">
+						</a>
+						<h5 class="popup__title">Рассчетный счет без визита в банк</h5>
+						<img src="img/svg/close.svg" alt="Закрыть" class="popup__close close-popup">
+					</div>
+					<!-- /.popup__title-box -->
+
+					<ul class="popup__service-list">
+
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Услуги налогового планирования</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Жалоба в налоговую</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Ответ на требование налогового органа
+								<span class="popup2__top-decor">top</span>
+							</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Пакет безопасности сделок</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Услуги налогового планирования</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<div class="popup2__service-link-box">
+								<a href="" class="popup2__service-link">Оптимизация видов налогов</a>
+								<img src="img/svg/green-arrow.svg" alt="Развернуть" class="popup2__arrow">
+							</div>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Ответ на требование налогового органа</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Пакет безопасности сделок</a>
+						</li>
+						<li class="subsubmenu-popup-active popup__service-item popup__service-item_popup2">
+							<div class="popup2__service-link-box">
+								<span href="" class="subsubmenu-popup-link popup2__service-link">Консультация по налогам
+									<span class="popup2__top-decor">top</span>
+								</span>
+								<img src="img/svg/green-arrow.svg" alt="Развернуть" class="popup2__arrow-sub">
+							</div>
+
+							<ul class="subsubmenu subsubmenu-popup2">
+
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультации по НДС</a>
+								</li>
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультации УСН</a>
+								</li>
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультации по налогу на
+										имущество</a>
+								</li>
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультации по налогу на
+										прибыль</a>
+								</li>
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультация по НДФЛ</a>
+								</li>
+								<li class="subsubmenu__item">
+									<a href="" class="subsubmenu__link subsubmenu__link_popup2">Консультация по страховым
+										взносам</a>
+								</li>
+
+							</ul>
+							<!-- /.subsubmenu-->
+
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Возражения на акт налоговой</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Пакет должной осмотрительности
+								<span class="popup2__new-decor">new</span>
+							</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Международное налоговое планирование</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<div class="popup2__service-link-box">
+								<a href="" class="popup2__service-link">Оптимизация для юрлиц</a>
+								<img src="img/svg/green-arrow.svg" alt="Развернуть" class="popup2__arrow">
+							</div>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Возражения на акт налоговой</a>
+						</li>
+						<li class="popup__service-item popup__service-item_popup2">
+							<a href="" class="popup2__service-link">Пакет должной осмотрительности</a>
+						</li>
+
+					</ul>
+					<!-- /.popup__service-list -->
+
+				</div>
+			</div>
+		</article>
+		<!-- /.popup -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<script src="js/main.js"></script>
+
 </body>
+
 </html>
