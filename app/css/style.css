@@ -90,13 +90,13 @@ h6 {
 /*---------------------*/
 @font-face {
   font-family: "Manrope";
-  src: local("Manrope  Medium"), local("Manrope--Medium"), url("../../fonts/Manrope/Manrope-Medium.woff2") format("woff2"), url("../../fonts/Manrope/Manrope-Medium.woff") format("woff"), url("../../fonts/Manrope/Manrope-Medium.ttf") format("truetype");
+  src: local("Manrope  Medium"), local("Manrope--Medium"), url("../fonts/Manrope/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Oswald";
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("../../fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("../../fonts/Oswald/Oswald-Regular.woff") format("woff"), url("../../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Regular.woff") format("woff"), url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -415,10 +415,13 @@ a {
   }
 }
 .menu_active {
+  width: 100%;
   display: block;
   position: absolute;
+  z-index: 98;
   top: 100px;
   left: 20%;
+  background: white;
 }
 @media (max-width: 760px) {
   .menu_active {
@@ -430,9 +433,9 @@ a {
     left: 20px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .menu_active {
-    top: 80px;
+    top: 75px;
     left: 20px;
   }
 }
@@ -442,7 +445,6 @@ a {
     height: 100vh;
     top: 0px;
     left: 0px;
-    background: white;
     overflow-y: scroll;
   }
 }
@@ -455,6 +457,7 @@ a {
   justify-content: center;
   background-color: transparent;
   cursor: pointer;
+  z-index: 99;
 }
 @media (max-width: 1000px) {
   .menu-burger {
@@ -574,13 +577,18 @@ a {
 
 .services-menu {
   position: absolute;
-  top: 122px;
+  top: 115px;
   left: 0;
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .services-menu {
-    top: 120px;
+    top: 90px;
+  }
+}
+@media (max-width: 415px) {
+  .services-menu {
+    top: 100px;
   }
 }
 .services-menu_active {
@@ -649,6 +657,11 @@ a {
   left: -25px;
   background-image: url("../../img/svg/choose.svg");
   background-size: cover;
+}
+@media (max-width: 600px) {
+  .services-list__link::before {
+    left: -18px;
+  }
 }
 .services-list__link:hover {
   color: #46A44E;
@@ -773,6 +786,11 @@ a {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .submenu__top-decor_hide {
+    display: none;
+  }
+}
 .submenu__new-decor {
   padding: 4px 8px;
   font-weight: 800;
@@ -814,7 +832,7 @@ a {
 @media (max-width: 600px) {
   .submenu {
     padding: 20px 0 0 10px;
-    left: 100%;
+    left: 99%;
     gap: 10px;
   }
 }
@@ -896,6 +914,9 @@ a {
   .breadcrumbs__nav {
     gap: 5px;
   }
+}
+.breadcrumbs__line {
+  display: inline;
 }
 .breadcrumbs__link {
   position: relative;
@@ -1070,12 +1091,12 @@ a {
     gap: 150px;
   }
 }
-@media (max-width: 1320px) {
+@media (max-width: 1380px) {
   .hero {
     gap: 80px;
   }
 }
-@media (max-width: 1215px) {
+@media (max-width: 1310px) {
   .hero {
     margin-left: 0;
     gap: 0;
